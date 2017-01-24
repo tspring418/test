@@ -65,6 +65,9 @@ namespace WebApplication3.Models
     public class RegisterViewModel
     {
         [Required]
+        public string Notifications;
+
+        [Required]
         [EmailAddress]
         [Display(Name = "Email")]
         public string Email { get; set; }
